@@ -6,6 +6,14 @@
 <meta charset="UTF-8">
 <title>로그인</title>
 </head>
+
+<!-- insert와 update를 하나의 파일로 만다는 방법
+	if(id!=null || id="")
+		update 소스코드
+	else
+		insert 소스코드
+
+ -->
 <body>
 	<h2>로그인</h2>
 	<form name="login" action="insertPro.jsp" method="post">

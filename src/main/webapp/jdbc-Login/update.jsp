@@ -54,7 +54,7 @@
 		암호 : <input type="password" name="pwd" value=<%=pwd2 %>> <br/>
 		<input type="submit" value="변경 저장" />
 		<button type="button" onclick="location.href='list.jsp'">목록조회</button>
-		<button type="button" onclick="">삭제</button>
+		<button type="button" onclick="location.href='deletePro.jsp?id=<%=id %>'">삭제</button>
 	</form>
 </body>
 </html>
