@@ -19,7 +19,7 @@
 	
 	// 3. SQL문 준비
 	/* String sql = "insert into login(id, pwd) values('" + id +"', '" + pwd + "')"; */
-	String sql = "select * from login where id=?";
+	String sql = "select * from login where id='?'";
 	
 	// 4. SQL문 실행
 	/* Statement stmt = con.createStatement(); */
