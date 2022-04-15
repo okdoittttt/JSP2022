@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     import = "java.sql.*"%>
+<%@include file="dbcon.jsp" %>
 <!DOCTYPE html>
 <html>
 
@@ -135,12 +136,6 @@
   }
     </style>
 <%
-	// 1. JDBC Driver 로드
-	Class.forName("org.mariadb.jdbc.Driver");
-	
-	// 2. DB와의 연결(connection)을 생성
-	String url = "jdbc:mariadb://localhost:3306/OKMOO";
-	Connection con = DriverManager.getConnection(url, "root", "0070");
 	
 	// 3. 연결 후 그 통로를 통해 SQL문을 실행시킨다.
 	String sql = "select * from board";
@@ -175,10 +170,10 @@
 		String content = rs.getString("content");
 %>
 		<tr>
-			<td><a href='board.jsp?title=<%=title %>'><%=title %></a></td>
-			<td><a href='board.jsp?name=<%=name %>'><%=name  %></a></td>
-			<td><a href='board.jsp?pwd=<%=pwd2 %>'><%=pwd2  %></a></td>
-			<td><a href='board.jsp?content=<%=content %>'><%=content  %></a></td>
+			<td><a href='boardUpdate.jsp?title=<%=title %>'><%=title %></a></td>
+			<td><a href='boardUpdate.jsp?name=<%=name %>'><%=name  %></a></td>
+			<td><a href='boardUpdate.jsp?pwd=<%=pwd2 %>'><%=pwd2  %></a></td>
+			<td><a href='boardUpdate.jsp?content=<%=content %>'><%=content  %></a></td>
 		</tr>
 		
 <%	} %>
