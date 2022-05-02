@@ -5,7 +5,7 @@
     pageEncoding="UTF-8"
     import ="java.sql.*" %>
 <%	request.setCharacterEncoding("utf-8");
-	String email = request.getParameter("email");
+	String id = request.getParameter("id");
 	String name = request.getParameter("name");
 	String pwd = request.getParameter("pwd");
 
@@ -17,10 +17,10 @@
 	
 	
 	//3. 생성된 연결을 통해 SQL문 실행 의뢰 준비
-	String sql = "INSERT INTO login(email,name,pwd) VALUES(?,?,?)";
+	String sql = "INSERT INTO login(id,name,pwd) VALUES(?,?,?)";
 	
 	PreparedStatement pstmt = con.prepareStatement(sql);
-	pstmt.setString(1, email);
+	pstmt.setString(1, id);
 	pstmt.setString(2, name);
 	pstmt.setString(3, pwd);
 	
