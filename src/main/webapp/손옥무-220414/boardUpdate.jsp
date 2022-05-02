@@ -88,10 +88,9 @@
 	     <tr height="1" bgcolor="#82B5DF"><td colspan="4"></td></tr>
 	     <tr align="center">
 	      <td> </td>
-	      <td colspan="1"><input type="submit" value="등록">
+	      <td colspan="1"><input type="submit" value="등록" style="float:left;">
 	      <td> </td>
 	     </tr>
-	     <%-- <button type="button" onclick="location.href='boardDeletePro.jsp?name=<%=name %>'">삭제</button> --%>
 	    </table>
 	   </td>
 	  </tr>

@@ -135,7 +135,7 @@
     letter-spacing: 2px;
   }
     </style>
-<%
+<%	
 	
 	// 3. 연결 후 그 통로를 통해 SQL문을 실행시킨다.
 	String sql = "select * from board";
