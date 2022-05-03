@@ -29,11 +29,11 @@
 </div>
 
 <div class="mainNews">
-	<p>A</p>
+	<img src="img/img01.jpg" class="test"/><span class="imgtxt">ASDFG</span>
 </div>
 
 <div class="mainNews">
-	<p>B</p>
+	<p>AAA</p>
 </div>
 
 <div class="mainNews">
