@@ -3,6 +3,8 @@ package cs.dit;
  * 패키지명 : cs.dit
  * 파일명 : loginDTto.java
  * 작성자 : 손옥무
+ * 소스코드 설명 :
+ * 	DB에 내용을 담아 전달하는 객체.
  ========================================================== */
 public class LoginDto {
 	private String id;

@@ -25,11 +25,14 @@
 <hr>
 <div class="leftbar">
 	<h3>경기일정</h3>
-	<p>주요 경기 일정을 확인하세요.</p>
+	<form>
+		<!-- <img src="img/img03.png" class="imggg"> --><input type="text" value="Search..." class="stxt" name="search">
+		<hr>
+	</form>
 </div>
 
 <div class="mainNews">
-	<img src="img/img01.jpg" class="test"/><span class="imgtxt">ASDFG</span>
+	<p>QQQ</p>
 </div>
 
 <div class="mainNews">
@@ -37,7 +40,7 @@
 </div>
 
 <div class="mainNews">
-	<p>C</p>
+	<p>CCC</p>
 </div>
 
 <div class="mainSchedule">

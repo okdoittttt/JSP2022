@@ -1,22 +1,16 @@
-<%@page import="javax.sql.DataSource"%>
+<%@page import="cs.dit.LoginDto"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="cs.dit.LoginDao"%>
+<%-- <%@page import="javax.sql.DataSource"%>
 <%@page import="javax.naming.Context"%>
-<%@page import="javax.naming.InitialContext"%>
+<%@page import="javax.naming.InitialContext"%> --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 
 <%
-	Context initCtx =  new InitialContext();
-	Context envCtx = (Context) initCtx.lookup("java:comp/env");
-	DataSource ds = (DataSource) envCtx.lookup("jdbc/jsson");
-	Connection con = ds.getConnection();
-
-	//3. 생성된 연결을 통해 SQL문 실행 의뢰 준비
-	String sql = "SELECT * FROM login";
-	Statement st = con.createStatement();
-	
-	//4. SQL 실행
-	ResultSet rs = st.executeQuery(sql);
+	LoginDao dao = new LoginDao();
+	ArrayList<LoginDto> dtos = dao.list();
 %>
 
 <!DOCTYPE html>
@@ -40,24 +34,14 @@
 			<th>비밀번호</th>
 		</tr>
 <% 
-	//5. 결과집합 처리 
-	while (rs.next()){
-		String id = rs.getString("id");
-		String name = rs.getString("name");
-		String pwd = rs.getString("pwd");
+	for(LoginDto dto : dtos){
 %>	
 		<tr>
-			<td><a href="updateForm.jsp?id=<%=id %>"><%=id %></a></td>
-			
-			<td><%=name %></td>
-			<td><%=pwd %></td>
+			<td><a href="updateForm.jsp?id=<%=dto.getId() %>"><%=dto.getId() %></a></td>
+			<td><%=dto.getName() %></td>
+			<td><%=dto.getPwd() %></td>
 		</tr>
-<%} 
-	//6. 연결 해제
-	rs.close();
-	st.close();
-	con.close();
-%>
+<%	} %>
 	</table>
 	</div>	
 </body>

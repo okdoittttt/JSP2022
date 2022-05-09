@@ -2,6 +2,9 @@ package cs.dit;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -11,8 +14,10 @@ import javax.sql.DataSource;
  * 패키지명 : cs.dit
  * 파일명 : loginDao.java
  * 작성자 : 손옥무
- * login 테이블과 연동하는 프로그램
- * - insert() 
+ * 소스코드 설명 : 
+ * 	login 테이블과 연동하는 프로그램
+ * - insert(LoginDto) 
+ * - list()
  ========================================================== */
 public class LoginDao {
 	// connection pool에서 db connection 불러오기.
@@ -64,6 +69,36 @@ public class LoginDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	// list()
+	public ArrayList<LoginDto> list() {
+		String sql = "select id, name, pwd from login";
+		ArrayList<LoginDto> dtos = new ArrayList<LoginDto>();
+		// 1. DB 커넥션 가져오기
+		try (
+			Connection con = getConnection();
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery(sql);
+			)
+		{
+		// 2. SQL 문 실행
+			while(rs.next()) {
+				LoginDto dto = new LoginDto();
+				// LoginDto dto = new LogdinDto(rs.getString("id"), rs,getString("name"), rs.getString("pwd"));
+				
+				dto.setId(rs.getString("id"));
+				dto.setName(rs.getString("name"));
+				dto.setPwd(rs.getString("pwd"));
+				
+				dtos.add(dto);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		// 3. 결과 데이터 리턴
+		return dtos;
 	}
 
 }
