@@ -51,7 +51,23 @@ public class LoginDao {
 	}
 	
 	// login 테이블에 사용자 정보 삭제
-	public void delete() {}
+	public void delete(LoginDto dto) {
+		String sql = "DELETE FROM LOGIN WHERE ID=?";
+		try(
+			Connection con = getConnection();
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			)
+		{
+			pstmt.setString(1, dto.getId());
+			
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 	// login 테이블에 사용자 정보 업데이트
 	public void update(LoginDto dto) {
 		String sql = "UPDATE LOGIN SET NAME=?, PWD=? WHERE ID=?";

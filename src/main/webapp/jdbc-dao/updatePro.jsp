@@ -13,7 +13,7 @@
 	LoginDto dto = new LoginDto(id, name, pwd);
 	
 	LoginDao dao = new LoginDao();
-	dao.insert(dto);
+	dao.update(dto);
 	%>
 
 	<script>

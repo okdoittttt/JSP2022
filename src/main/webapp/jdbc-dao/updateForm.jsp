@@ -1,27 +1,21 @@
+<%@page import="cs.dit.LoginDao"%>
+<%@page import="cs.dit.LoginDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     import="java.sql.*" %>
-<% 	String id = request.getParameter("id");
+<% 	
+	// 한글처리
+	request.setCharacterEncoding("utf-8");
+	// 브라우저에서 전달된 정보
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	String pwd = request.getParameter("pwd");
 	
-	Class.forName("org.mariadb.jdbc.Driver");
-	String url ="jdbc:mariadb://localhost:3306/jinsookdb";
-	String user ="jinsook";
-	String passwd ="1111";
-	Connection con = DriverManager.getConnection(url, user, passwd);
-	
-	String sql = "select * from login where id = ?";
-	PreparedStatement pstmt = con.prepareStatement(sql);
-	pstmt.setString(1, id);
-	
-	ResultSet rs = pstmt.executeQuery();
-	
-	String name ="";
-	String pwd ="";
-	
-	if(rs.next()){
-		name = rs.getString("name");
-		pwd = rs.getString("pwd");
-	}
+	LoginDto dto = new LoginDto(id, name, pwd);
+
+	LoginDao dao = new LoginDao();
+	dao.update(dto);
+
 %>	
 <!DOCTYPE html>
 <html>

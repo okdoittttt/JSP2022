@@ -1,3 +1,5 @@
+<%@page import="cs.dit.LoginDao"%>
+<%@page import="cs.dit.LoginDto"%>
 <%@page import="javax.sql.DataSource"%>
 <%@page import="javax.naming.Context"%>
 <%@page import="javax.naming.InitialContext"%>
@@ -5,8 +7,20 @@
     pageEncoding="UTF-8"
     import="java.sql.*"  %>
     
-<%	request.setCharacterEncoding("utf-8");
-	//1. DB 연동 드라이버 로드
+<%	
+	request.setCharacterEncoding("utf-8");
+	
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	String pwd = request.getParameter("pwd");
+	
+	LoginDto dto = new LoginDto(id, name, pwd);
+	LoginDao dao = new LoginDao();
+	dao.delete(dto);
+	
+	/* response.sendRedirect("list.jsp"); */
+
+/* 	//1. DB 연동 드라이버 로드
 	Context initCtx =  new InitialContext();
 	Context envCtx = (Context) initCtx.lookup("java:comp/env");
 	DataSource ds = (DataSource) envCtx.lookup("jdbc/jsson");
@@ -22,7 +36,7 @@
 	
 	//6. 객체 해제
 	pstmt.close();
-	con.close();
+	con.close(); */
 %>
 	
 <script>
