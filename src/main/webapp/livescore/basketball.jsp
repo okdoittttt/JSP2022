@@ -34,19 +34,18 @@
 		</ul>
 	</div>
 <hr>
-<center><h1><span style="background-color: orange;">FOOTBALL</span></h1></center>
-<div class="sideBar">
-	<center><h3>경기 일정</h3></center>
-	<ul class="gameSchedule">
-		<li>Data 1</li>
-		<li>Data 2</li>
-		<li>Data 3</li>
-	</ul>
-</div>
-
-<div class="gameResult">
-	<center><h3>경기 결과</h3></center>
-</div>
-
+	<center><h1><span style="background-color: orange;">BASKETBALL</span></h1></center>
+		<div class="sideBar">
+			<center><h3>경기 일정</h3></center>
+			<ul class="gameSchedule">
+				<li>Data 1</li>
+				<li>Data 2</li>
+				<li>Data 3</li>
+			</ul>
+		</div>
+		
+		<div class="gameResult">
+			<center><h3>경기 결과</h3></center>
+		</div>
 </body>
 </html>

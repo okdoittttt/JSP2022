@@ -12,10 +12,8 @@
 	String pwd = request.getParameter("pwd");
 	
 	LoginDto dto = new LoginDto(id, name, pwd);
-
 	LoginDao dao = new LoginDao();
 	dao.update(dto);
-
 %>	
 <!DOCTYPE html>
 <html>
@@ -36,15 +34,15 @@
 		<form action="updatePro.jsp" method="post">
 		  <div class="form-group">
 	      <label for="id">ID:</label>
-	      <input type="text" class="form-control" id="id" name="id" value="<%=id%>" readonly>
+	      <input type="text" class="form-control" id="id" name="id" value="<%=dto.getId()%>" readonly>
 	    </div>
 	    <div class="form-group">
 	      <label for="name">NAME:</label>
-	      <input type="text" class="form-control" id="name" name="name" value="<%=name%>">
+	      <input type="text" class="form-control" id="name" name="name" value="<%=dto.getName()%>">
 	    </div>
 	    <div class="form-group">
 	      <label for="pwd">PASSWORD:</label>
-	      <input type="password" class="form-control" id="pwd" name="pwd" value="<%=pwd%>">
+	      <input type="password" class="form-control" id="pwd" name="pwd" value="<%=dto.getPwd()%>">
 	    </div>
 	    <br>
 	    <div class="text-center">

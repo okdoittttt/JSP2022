@@ -34,7 +34,7 @@
 		</ul>
 	</div>
 <hr>
-<center><h1><span style="background-color: orange;">FOOTBALL</span></h1></center>
+<center><h1><span style="background-color: orange;">BASEBALL</span></h1></center>
 <div class="sideBar">
 	<center><h3>경기 일정</h3></center>
 	<ul class="gameSchedule">
