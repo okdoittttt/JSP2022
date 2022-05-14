@@ -44,24 +44,25 @@
 			<li>
 				<div class="mainNews">
 					<a href="#">
-						<img src="img/img01.jpg" class="image-thumbnail" alt="">
-						<span>뉴스기사 1번</span>
+						<img src="img/4-2.jpeg" class="image-thumbnail" alt="">
+						<span>(NBA) ‘버틀러 23P’ 마이애미, 필라델피아 꺾고 시리즈 3-2 만들다</span>
+						
 					</a>
 				</div>
 			</li>
 			<li>
 				<div class="mainNews">
 					<a href="#">
-						<img src="img/img02.jpg" class="image-thumbnail" alt="">
-						<span>뉴스기사 2번</span>
+						<img src="img/1-1.jpg" class="image-thumbnail" alt="">
+						<span>(EPL) 손흥민 EPL 누적 파워랭킹 1위 등극</span>
 					</a>
 				</div>
 			</li>
 			<li>
 				<div class="mainNews">
 					<a href="#">
-						<img src="img/img03.jpg" class="image-thumbnail" alt="">
-						<span>뉴스기사 3번</span>
+						<img src="img/5-1.jpeg" class="image-thumbnail" alt="">
+						<span>(K리그) K리그 적응 마친 이승우, 3년 만에 대표팀 복귀 현실로</span>
 					</a>
 				</div>
 			</li>

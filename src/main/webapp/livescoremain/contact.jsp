@@ -14,7 +14,6 @@
 <title>LiveScore</title>
 </head>
 <body>
-<body>
 	<div id="header">
 		<h1>Live Score</h1>
 		<ul id="navigation">

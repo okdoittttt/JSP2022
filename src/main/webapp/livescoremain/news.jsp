@@ -44,37 +44,40 @@
 		<div>
 			<ul>
 				<li>
-					<a href="#" class="figure">
-						<!-- <img src="img/img01.jpg" class="image-thumbnail" alt=""> -->
+					<a href="news/single_post_1.jsp" class="figure">
+						<img src="img/1-1.jpg" class="image-thumbnail" alt="">
 					</a>
 					<div>
-						<h3>Example Title here</h3>
+						<h3>(EPL) 손흥민 EPL 누적 파워랭킹 1위 등극</h3>
+						<p>입력 : 2022-05-10 11:01</p>
 						<p>
-							Example description here. 우리는 소셜 미디어 기능의 제공과 데이터 분석 및 본 사이트가 올바로 동작하고 개인화된 콘텐츠와 광고를 제공하기 위해 쿠키를 사용하고 있습니다. 회사 사이트에 대한 귀하의 사용 정보를 회사의 소셜 미디어, 광고 및 분석 협력사와 공유합니다.
+							잉글랜드 프로축구 프리미어리그(EPL) 토트넘 홋스퍼의 손흥민이 EPL 올 시즌 누적 파워랭킹 1위에 올랐다.
+						</p>
+						<a href="news/single_post_1.jsp" class="more">read this</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="figure">
+						<img src="img/2-1.jpeg" class="image-thumbnail" alt="">
+					</a>
+					<div>
+						<h3>(해외축구) 챔피언스리그, 2024-25시즌부터 32개→36개팀 확대</h3>
+						<p>입력 2022.05.11 22:38</p>
+						<p>
+							세계 최고의 무대 UEFA 챔피언스리그가 2024-25시즌부터 총 36개팀이 참가하는 방식으로 개편된다.
 						</p>
 						<a href="#" class="more">read this</a>
 					</div>
 				</li>
 				<li>
 					<a href="#" class="figure">
-						<!-- <img src="img/img01.jpg" class="image-thumbnail" alt=""> -->
+						<img src="img/3-2.jpeg" class="image-thumbnail" alt="">
 					</a>
 					<div>
-						<h3>Example Title here</h3>
+						<h3>(KBO) ‘33G 만에 하차’ 이동욱, 우승 감독 초라한 퇴장</h3>
+						<p>입력 2022.05.12 00:09</p>
 						<p>
-							Example description here. 우리는 소셜 미디어 기능의 제공과 데이터 분석 및 본 사이트가 올바로 동작하고 개인화된 콘텐츠와 광고를 제공하기 위해 쿠키를 사용하고 있습니다. 회사 사이트에 대한 귀하의 사용 정보를 회사의 소셜 미디어, 광고 및 분석 협력사와 공유합니다.
-						</p>
-						<a href="#" class="more">read this</a>
-					</div>
-				</li>
-				<li>
-					<a href="#" class="figure">
-						<!-- <img src="img/img01.jpg" class="image-thumbnail" alt=""> -->
-					</a>
-					<div>
-						<h3>Example Title here</h3>
-						<p>
-							Example description here. 우리는 소셜 미디어 기능의 제공과 데이터 분석 및 본 사이트가 올바로 동작하고 개인화된 콘텐츠와 광고를 제공하기 위해 쿠키를 사용하고 있습니다. 회사 사이트에 대한 귀하의 사용 정보를 회사의 소셜 미디어, 광고 및 분석 협력사와 공유합니다.
+							2020시즌 통합 우승 이끌고도 팀 성적 부진 등으로 계약 해지올 시즌 최하위 머무는 가운데 코치 음주 폭행 파문으로 결정타
 						</p>
 						<a href="#" class="more">read this</a>
 					</div>
