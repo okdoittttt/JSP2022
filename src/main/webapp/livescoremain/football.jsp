@@ -11,11 +11,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <title>Football</title>
 </head>
 <body>
 	<div id="header">
-		<h1>Live Score</h1>
+		<h1 class="mainTitle">직진</h1>
 		<ul id="navigation">
 			<li>
 				<a href="index.jsp">home</a>
@@ -56,6 +59,11 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2022 JSP 웹 프로젝트 최혁재, 박재용, 손옥무</p>
 		</div>
 	</div>
 </body>

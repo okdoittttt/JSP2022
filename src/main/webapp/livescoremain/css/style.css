@@ -1,4 +1,4 @@
-/** ==========================================폰트 정의==========================================**/
+/** ========================================== 폰트 정의 ==========================================**/
 @charset "UTF-8";
 @font-face {
 	font-family: 'poller_oneregular';
@@ -20,10 +20,11 @@
 src: url('/fonts/NanumGothic.eot');
 src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),
 url('/fonts/NanumGothic.woff') format('woff');}
-/** ==========================================태그 정의==========================================**/
+/** ========================================== 바디 정의 ==========================================**/
 body {
 	background: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: 'Jua', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 1;
@@ -44,8 +45,8 @@ p a {
 p a:hover {
 	color: #898989;
 }
-/** ==========================================ID 정의==========================================**/
-/** ==========================================해더 정의==========================================**/
+/** ========================================== ID 정의 ==========================================**/
+/** ========================================== 헤더 정의 ==========================================**/
 #header {
 	margin: 0 auto;
 	padding: 44px 0 50px;
@@ -78,6 +79,7 @@ p a:hover {
 	color: #252525;
 	display: inline-block;
 	font-family: "Arial Black", Gadget, sans-serif;
+	/* font-family: 'Jua', sans-serif; */
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -88,7 +90,7 @@ p a:hover {
 #header ul li a:hover, #header ul li.selected a {
 	color: #0ba39c;
 }
-/** ==========================================바디 정의==========================================**/
+/** ========================================== 바디 정의 ==========================================**/
 #body {
 	margin: 0;
 	padding: 0 0 30px;
@@ -148,6 +150,7 @@ p a:hover {
 }
 #body > div .article p {
 	margin: 0 0 30px;
+	font-size: 20px;
 }
 #body div ul {
 	margin: 0;
@@ -349,11 +352,29 @@ p a:hover {
 	color: #252525;
 	cursor: pointer;
 }
-/** ==========================================푸터 정의========================================== **/
-/** ==========================================클래스 정의========================================== **/
+/** ========================================== 푸터 정의 ==========================================**/
+#footer {
+	background: #252525;
+	margin: 0;
+	padding: 36px 0 42px;
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 960px;
+}
+#footer div p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+/** ========================================== class 정의 ==========================================**/
 .mainNews {
 	width: 280px;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -368,26 +389,105 @@ p a:hover {
 }
 .mainPage {
 	border: 3px solid;
-	height: 550px;
+	height: 600px;
 	margin-left: 15%;
 	margin-right: 15%;
 }
 .gameResult {
+	font-weight: bold;
 	text-align: center;
+	font-size:20px;
 }
 .gameResultBorder {
-	border: 3px double;
+	border: 1px double;
 	height: 750px;
+	font-weight: normal;
 }
 .result {
 	border: 1px double;
 	border-color: white;
-	background-color: black;
-	color: white;
+	background-color: aliceblue;
+	color: black;
 	font-size: 25px;
+	text-align: center;
 }
 .listStyleNone {
 	list-style: none;
 	padding-left: 0;
 	
+}
+.mainResult {
+	border: 3px solid;
+	border-color: black;
+	margin-left: 14%;
+	margin-right: 14%;
+	margin-bottom: 70px;
+}
+.mainResult p {
+	border: 1px solid;
+	border-radius: 25px;
+	margin-bottom: 3px;
+	background-color: aliceblue;
+	color: black;
+	width: 95%;
+	margin-left: 5px;
+	marin-right: 5px;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+}
+.mainResult h3 {
+	text-align: center;
+	font-size: 35px;
+}
+.mainResult h4 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+.mainTitle {
+	font-size: 45px;
+	margin-bottom: 10px;
+}
+.don1{
+	background-color: gray;
+	color: black;
+	font-weight: normal;
+	border: 3px double;
+	text-align: center;
+	font-size: 25px;
+}
+.don2{
+	background-color: gray;
+	color: black;
+	font-weight: normal;
+	border: 1px double;
+	text-align: center;
+	font-size: 25px;
+}
+.don3{
+	background-color: gray;
+	color: black;
+	font-weight: normal;
+	border: 1px double;
+	text-align: center;
+	font-size: 25px;
+}
+.don4{
+	background-color: gray;
+	color: black;
+	font-weight: normal;
+	border: 1px double;
+	text-align: center;
+	font-size: 25px;
+}
+.don5{
+	background-color: gray;
+	color: black;
+	font-weight: normal;
+	border: 1px double;
+	text-align: center;
+	font-size: 25px;
 }

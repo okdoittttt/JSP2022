@@ -11,12 +11,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <title>News</title>
 </head>
 <body>
 <body>
 	<div id="header">
-		<h1>Live Score</h1>
+		<h1 class="mainTitle">직진</h1>
 		<ul id="navigation">
 			<li>
 				<a href="index.jsp">home</a>
@@ -57,7 +60,7 @@
 					</div>
 				</li>
 				<li>
-					<a href="#" class="figure">
+					<a href="news/single_post_2.jsp" class="figure">
 						<img src="img/2-1.jpeg" class="image-thumbnail" alt="">
 					</a>
 					<div>
@@ -66,7 +69,7 @@
 						<p>
 							세계 최고의 무대 UEFA 챔피언스리그가 2024-25시즌부터 총 36개팀이 참가하는 방식으로 개편된다.
 						</p>
-						<a href="#" class="more">read this</a>
+						<a href="news/single_post_2.jsp" class="more">read this</a>
 					</div>
 				</li>
 				<li>
@@ -85,7 +88,10 @@
 			</ul>
 		</div>
 	</div>
-	
-	<br><br><br><br><br>
+	<div id="footer">
+		<div>
+			<p>&copy; 2022 JSP 웹 프로젝트 최혁재, 박재용, 손옥무</p>
+		</div>
+	</div>
 </body>
 </html>
