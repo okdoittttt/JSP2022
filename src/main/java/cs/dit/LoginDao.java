@@ -18,6 +18,9 @@ import javax.sql.DataSource;
  * 	login 테이블과 연동하는 프로그램
  * - insert(LoginDto) 
  * - list()
+ * - update()
+ * - delete()
+ * - checkUser() : 로그인하는 사용자가 유효한지 판별.
  ========================================================== */
 public class LoginDao {
 	// connection pool에서 db connection 불러오기.
@@ -117,4 +120,40 @@ public class LoginDao {
 		return dtos;
 	}
 
+	//checkUser()
+	public int checkUser(String id, String pwd) {
+		int check = 0;
+		
+		String sql = "select pwd from login where id=?";
+		try(
+			Connection con = getConnection();
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+		)
+		{
+			pstmt.setNString(1, id);
+			pstmt.setNString(2, pwd);
+			try(
+				ResultSet rs = pstmt.executeQuery(sql);
+				)
+			{
+				rs.next();
+				String dbpwd = rs.getString("pwd");
+				if(dbpwd.equals("id")) {
+					check=1;
+				}
+				else {
+					check=0;
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		
+		return check;
+	}
 }
