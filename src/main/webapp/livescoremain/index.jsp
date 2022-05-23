@@ -18,6 +18,12 @@
 </head>
 <body>
 <body>
+	<div id="top">
+		<ul>
+			<a href="signup.jsp"><li>회원가입</li></a>
+			<a href="login.jsp"><li>로그인</li></a>
+		</ul>
+	</div>
 	<div id="header">
 		<h1 class="mainTitle">직진</h1>
 		<ul id="navigation">
@@ -99,44 +105,3 @@
 	</div>
 </body>
 </html>
-
-<!-- <div class="mainPage">
-		<div class="gameResult">
-		<p>경기 일정</p>
-		<div class="don1">
-		<p style="color:black">03:30</p>
-			<ul class="listStyleNone">
-				<li>맨시티:맨유</li>
-			</ul>
-		<div class="don2">
-			<p style="color:black">21:30</p>
-			<ul class="listStyleNone">
-				<li>토트넘:아스날</li>
-				</ul>
-		<div class="don3">
-		<p style="color:black">01:30</p>
-			<ul class="listStyleNone">
-				<li>뉴캐슬:에버튼</li>
-			</ul>
-		<div class="don4">
-		<p style="color:black">04:00</p>
-			<ul class="listStyleNone">
-				<li>번리:리즈</li>
-			</ul>
-		<div class="don5">
-		<p style="color:black">20:30</p>
-			<ul class="listStyleNone">
-				<li>첼시:리버풀</li>
-			</ul>
-		</div>
-		</div>
-		</div>
-		</div>
-			<div>
-				<ul class="listStyleNone">
-				
-				</ul>
-			</div>
-		</div>
-	</div>
-	<br><br><br><br><br><br> -->

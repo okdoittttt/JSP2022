@@ -1,7 +1,7 @@
 <!--
 	작성자 : 손옥무
 	변경이력 : 
-	프로그램 설명 : 라이브 스코어 사이트 메인 페이지.
+	프로그램 설명 : 로그인 페이지
 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -14,13 +14,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<title>LiveScore</title>
+<title>로그인</title>
 </head>
 <body>
+	<div id="top">
+		<ul>
+			<a href="signup.jsp"><li>회원가입</li></a>
+			<a href="login.jsp"><li>로그인</li></a>
+		</ul>
+	</div>
 	<div id="header">
 		<h1 class="mainTitle">직진</h1>
 		<ul id="navigation">
-			<li>
+			<li class="selected">
 				<a href="index.jsp">home</a>
 			</li>
 			<li>
@@ -35,21 +41,18 @@
 			<li>
 				<a href="news.jsp">news</a>
 			</li>
-			<li  class="selected">
+			<li>
 				<a href="contact.jsp">contact</a>
 			</li>
 		</ul>
 	</div>
 	<hr>
 	<div id="body">
-		<h1><span>let's keep in touch</span></h1>
+		<h1><span>login</span></h1>
 		<form action="#">
-			<input type="text" name="fname" id="fname" value="name">
-			<input type="text" name="address" id="address" value="address">
-			<input type="text" name="email" id="email" value="email">
-			<input type="text" name="phone" id="phone" value="phone number">
-			<textarea name="message" id="message">message</textarea>
-			<input type="submit" name="send" id="send" value="send">
+			<p>아이디</p><input type="text" name="id" id="id">
+			<p>비밀번호</p><input type="password" name="pwd" id="pwd">
+			<input type="submit" name="send" id="send" value="로그인">
 		</form>
 	</div>
 	<div id="footer">

@@ -1,9 +1,6 @@
 <%@page import="cs.dit.LoginDto"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="cs.dit.LoginDao"%>
-<%-- <%@page import="javax.sql.DataSource"%>
-<%@page import="javax.naming.Context"%>
-<%@page import="javax.naming.InitialContext"%> --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
@@ -11,6 +8,7 @@
 <%
 	LoginDao dao = new LoginDao();
 	ArrayList<LoginDto> dtos = dao.list();
+	pageContext.setAttribute("dtos", dtos);
 %>
 
 <!DOCTYPE html>
@@ -37,9 +35,9 @@
 	for(LoginDto dto : dtos){
 %>	
 		<tr>
-			<td><a href="updateForm.jsp?id=<%=dto.getId() %>"><%=dto.getId() %></a></td>
-			<td><%=dto.getName() %></td>
-			<td><%=dto.getPwd() %></td>
+			<td><a href="updateForm.jsp?id=${dto.id }">${dto.id }</a></td>
+			<td>${dto.name }</td>
+			<td>${dto.pwd }</td>
 		</tr>
 <%	} %>
 	</table>
