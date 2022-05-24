@@ -2,6 +2,7 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	String list[] = {"a", "b", "c", "d"};
 	pageContext.setAttribute("list", list);
@@ -29,5 +30,14 @@
 	<ul>
 		<li>${namelist[2]}</li>
 	</ul>
+	
+	<c:set var="id" value="sonny" scope="session" />
+	<c:set var="income" value="2000" scope="session" />
+	<c:out value="${id }의 수입은 ${income } 입니다." />
+	
+	<c:if test="${income >= 1}" var="result">
+		<p>My income is : ${income }</p>
+		<p>Result : ${result }</p>
+	</c:if>
 </body>
 </html>

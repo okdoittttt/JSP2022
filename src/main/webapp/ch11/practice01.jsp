@@ -1,6 +1,7 @@
 <%@page import="cs.dit.LoginDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	LoginDto dto = new LoginDto("sonny", "홍길동", "1111");
 	pageContext.setAttribute("dto", dto);
@@ -20,12 +21,17 @@
 	연산자 : ${100-45}<br>
 	비교 연산 : ${100<45}<br>
 	내장 객체 : ${param.id}<br>
+	empty 연산자 : ${empty param.id }<br>
+	삼항연산 : ${empty param.id ? "비었습니다." : param.id }<br>
 	<br>
 	id : ${dto.id}<br>
 	name : ${dto.name}<br>
 	pwd : ${dto.pwd}<br>
 	<br>
 	프로토콜 : ${pageContext.request.protocol}<br>
-	${pageContext.request.remoteHost}
+	${pageContext.request.remoteHost}<br>
+	<br>
+	
+	<c:out value="${id2 }" />
 </body>
 </html>
